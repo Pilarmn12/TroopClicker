@@ -1,0 +1,413 @@
+/*
+ * ARCHIVO CSS PARA EL JUEGO
+ */
+
+/******************** ESTILOS NORMALES (para móviles en vertical) ********************/
+body {
+    margin: 0%;
+    padding: 0%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 100%;
+    background-image: url(../img/Fondo/backgrounds/background1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#resolucionZoom {
+    display: none;
+}
+
+/*********** ENEMIGOS, POSICION, DATOS, TAMAÑO ***********/
+
+#posicionEnemigo {
+    background-image: url(../img/Fondo/MarcoCompleto.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    text-align: center;
+}
+
+#fotoEnemigo {
+    background-image: url(../img/Enemigos/ghost.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#botonesMejoras {
+    background-image: url(../img/Fondo/MarcoCompleto.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+}
+
+#posicionMonedasTotal {
+    background-image: url(../img/Fondo/MarcoMonedas.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+}
+
+#datosPersonaje {
+    background-image: url(../img/Fondo/MarcoCompleto.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+}
+
+/*********** BOTONES CENTRALES TIENDA, STATS, INVENTARIO ***********/
+
+#botonesCentrales>button {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: right;
+}
+
+#botonTiendaNavCentral {
+    background-image: url(../img/BotonesNav/CartelTienda.png);
+}
+
+#botonStatsNavCentral {
+    background-image: url(../img/BotonesNav/CartelStats.png);
+}
+
+#botonInventarioNavCentral {
+    background-image: url(../img/BotonesNav/CartelMochila.png);
+}
+
+/*********** BOTONES COMPRA DE TROPAS ***********/
+
+#botonesCompra {
+    position: relative;
+    overflow-y: scroll;
+}
+
+#botonesCompra>button {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: right;
+}
+
+/* QUITAR EFECTO AL BOTON DE COMPRA */
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* SCROLLBAR TROPAS */
+
+.scrollbar-ripe-malinka::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+.scrollbar-ripe-malinka::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.scrollbar-ripe-malinka::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-image: -webkit-linear-gradient(330deg, #f093fb 0%, #f5576c 100%);
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+
+/* IMAGEN BOTONES DE TROPAS Y DAÑO */
+
+#mejoraDaño {
+    background-image: url(../img/Botones/BotonArquero.png);
+}
+
+#comprarTrampa {
+    background-image: url(../img/Botones/BotonTrampa.png);
+}
+
+#comprarCampesino {
+    background-image: url(../img/Botones/BotonCampesino.png);
+}
+
+#comprarGarrote {
+    background-image: url(../img/Botones/BotonGarrote.png);
+}
+
+#comprarEspadaCorta {
+    background-image: url(../img/Botones/BotonEspadaCorta.png);
+}
+
+#comprarEscudero {
+    background-image: url(../img/Botones/BotonEscudero.png);
+}
+
+#comprarLancero {
+    background-image: url(../img/Botones/BotonLancero.png);
+}
+
+#comprarHacha {
+    background-image: url(../img/Botones/BotonHacha.png);
+}
+
+#comprarCaballero {
+    background-image: url(../img/Botones/BotonCaballero.png);
+}
+
+#comprarHondero {
+    background-image: url(../img/Botones/BotonHondero.png);
+}
+
+#comprarArquero {
+    background-image: url(../img/Botones/BotonArquero.png);
+}
+
+#comprarBallestero {
+    background-image: url(../img/Botones/BotonBallesta.png);
+}
+
+#comprarSacerdote {
+    background-image: url(../img/Botones/BotonSacerdote.png);
+}
+
+#comprarMago {
+    background-image: url(../img/Botones/BotonMago.png);
+}
+
+#comprarCatapulta {
+    background-image: url(../img/Botones/BotonCatapulta.png);
+}
+
+
+#ajCuenta {
+    background-image: url(../img/BotonesNav/BotonCuenta.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#ajJuego {
+    background-image: url(../img/BotonesNav/BotonAjustes.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#musica {
+    background-image: url(../img/BotonesNav/BotonStop.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#wiki {
+    background-image: url(../img/BotonesNav/BotonWiki.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#guardar {
+    background-image: url(../img/BotonesNav/BotonGuardar.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/*********** MODALES ***********/
+
+/* MODAL AJUSTE CUENTA */
+
+/* SELECT FONDO*/
+.caja {
+    margin: 20px auto 40px auto;
+    border: 1px solid #d9d9d9;
+    height: 30px;
+    overflow: hidden;
+    width: 230px;
+    position: relative;
+}
+
+select {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 250px;
+}
+
+select:focus {
+    outline: none;
+}
+
+.caja::after {
+    content: "\025be";
+    display: table-cell;
+    padding-top: 7px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background-color: #d9d9d9;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    pointer-events: none;
+}
+
+/* MODAL TIENDA */
+#contenidoTiendaModal {
+    background-image: url(../img/tienda/shop.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/********************* RESPONSIVE *********************/
+
+/********************* Móviles en horizontal o tablets en vertical *********************/
+
+@media (min-width: 768px) {
+    /* ! AUN NO ES RESPONSIVE PARA MOVILES */
+    /* ? EN UN FUTURO SE AÑADIRA */
+}
+
+/* ! EL MINIMO PERMITIDO DE RESOLUCION SERA 900x500 */
+/********************* Tablets en horizonal y escritorios normales *********************/
+@media (min-width: 900px) {
+
+    .botonNav {
+        width: 7vh;
+        height: 7vh;
+    }
+
+    /* ENEMIGOS, POSICION, DATOS, TAMAÑO*/
+
+    #columnaIzq {
+        margin-left: 4%;
+    }
+
+    #posicionEnemigo {
+        width: 55vh;
+        height: 55vh;
+        padding: 8% 15% 5% 15%;
+        overflow: visible;
+    }
+
+    #fotoEnemigo {
+        height: 25vh;
+        width: 16vh;
+        font-size: 0.8vw;
+        overflow: visible;
+    }
+
+    #vidaEnemigo {
+        margin-top: 8%;
+        margin-bottom: 8%;
+        height: 25px
+    }
+
+    .nombreEnemigo {
+        font-size: 5vh;
+    }
+
+    #posicionMonedasTotal {
+        display: flex;
+        align-items: center;
+        width: 40vh;
+        height: 14vh;
+        overflow: visible;
+    }
+
+    #imgMoneda {
+        margin: 1vh auto auto -0.3vh;
+        width: 7vh;
+    }
+
+    #nombreMonedas {
+        margin: 3.5vh 2.5vh auto auto;
+        font-size: 13px;
+
+    }
+
+    /* BOTONES PARA COMPRAR MEJORAS */
+    #botonesMejoras {
+        padding: 14% 5% 12% 10%;
+        width: 40vh;
+        height: 40vh;
+        font-size: 16px;
+        overflow: visible;
+    }
+
+    /* DATOS CUENTA E IMAGEN HEROE*/
+
+    #datosPersonaje {
+        padding: 8% 5% 12% 10%;
+        width: 40vh;
+        height: 40vh;
+    }
+
+    #datosPersonaje>p {
+        font-size: 12px;
+    }
+
+    #datosPersonaje>h6 {
+        font-size: 17px;
+    }
+
+    #heroeImagen {
+        height: 20vh;
+        max-height: 15vh;
+        margin-bottom: 3vh;
+        display: block;
+        float: right;
+    }
+
+    /* BOTONES CENTRALES TIENDA, STATS, INVENTARIO*/
+
+    #botonesCentrales>button {
+        height: 15vh;
+        width: 15vh;
+        overflow: visible;
+        margin-bottom: 5%;
+    }
+
+    /* BOTONES PARA COMPRAR TROPAS */
+
+    #botonesCompra {
+        margin-top: 0%;
+        margin-right: -8%;
+        height: 65vh;
+    }
+
+    #botonesCompra>button {
+        padding-right: 4%;
+        margin-right: 6%;
+        margin-bottom: 3%;
+        height: 13vh;
+        width: 26vh;
+    }
+
+    #botonesCompra>button>p {
+        margin-top: 5%;
+        margin-right: 3%;
+        font-size: 12px;
+    }
+
+    /*********** MODALES ***********/
+
+    /* MODAL TIENDA */
+    #contenidoTiendaModal {
+        height: 68vh;
+    }
+
+
+}
+
+/********************* Escritorios muy anchos *********************/
+@media (min-width: 1200px) {
+
+
+    #botonesCentrales>button {
+        height: 16vh;
+        width: 16vh;
+    }
+}
+
+@media (min-width: 1400px) {}
+
+/********************* ESCRITORIOS DE 24 PULGADAS **********************/
+@media (min-width: 1900px) {}
