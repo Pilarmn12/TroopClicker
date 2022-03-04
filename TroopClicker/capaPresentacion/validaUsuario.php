@@ -55,7 +55,6 @@ session_start();
 
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-6 mb-lg-0">
-                        <h4 class="text-center fw-bold">¿Quieres empezar a jugar?
                         </h4> <br>
                         <?php
                         /** Si todos los campos del formulario tienen algún valor... */

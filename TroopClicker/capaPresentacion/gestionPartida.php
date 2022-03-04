@@ -60,22 +60,20 @@ session_start();
                                     $usuario->setContraseña($_POST['contraseña']);
                                     $usuario->setNombre($_POST['nombre']);
                                     $usuario->setIdPartidas($_POST['idPartidas']);
+                                    header('refresh:3; url=indexJuego.php');
+
                                     /** Envia los datos del usuario y su partida al juego. */
                                 } else {
                                     /** Si la partida no existe salta un error */
                                 ?>
                                     <h2 class="text-center text-decoration-underline fw-bold">
                                         Error Cargando Partida</h2> <br>
-                                    <?php
+                                <?php
                                     echo '<h5 class="text-center">La partida no existe, 
                                 para entrar a la partida primero
                              debe crearla desde la gestion de partidas</br>
                              Vuelva a iniciar sesion para poder hacerlo</h5>';
-                                    ?>
-                                    <a href="./gestionPartida.php">
-                                        <button class="btn btn-secondary w-100
-                                                mt-3">Volver atras</button></a>
-                                <?php
+                                    header('refresh:5; url=areaUsuario.php');
                                 }
                             }
 
@@ -125,6 +123,7 @@ session_start();
                                             . "<strong>" . $_POST['nombre'] . "</strong> "
                                             . "tu partida ha sido creada con exito!"
                                             . "</br></br> ¡Empieza a jugar!</h4>";
+                                        header('refresh:3; url=indexJuego.php');
                                     ?>
                                         <div class="row justify-content-center">
                                             <div class="col-md-auto col-md-offset-3 mt-5">
@@ -203,12 +202,14 @@ session_start();
                                     echo '<h5 class="text-center">Se ha producido un '
                                         . 'error al intentar eliminar la partida, <br><br> '
                                         . 'es probable que su usuario no tenga ninguna partida</h5>';
-                                    header('refresh:5; url=accesoUsuario.php');
+                                    header('refresh:5; url=areaUsuario.php');
                                 }
                             }
                         } else {
                             ?>
                             <!-- Muestra el formulario de gestión de datos. -->
+                            <h2 class="text-center text-decoration-underline fw-bold">Gestion de Partida</h2> <br>
+                            <h4 class="text-center">¿Que quieres hacer?</h4><br>
                             <div class="alert alert-warning mb-3" role="alert">
                                 ¡Recuerda! Para empezar a jugar primero debes crear la partida
                             </div>

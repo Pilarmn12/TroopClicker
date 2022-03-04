@@ -13,13 +13,13 @@ if (isset($_POST["fondoJuego"])) {
 	$fondoJuego = $_POST["selectFondo"];
 	/** Crea una cookie llamada estilo con el nombre del color y una caducidad
 	 * de 90 días. */
-	setcookie("estilo", $estilo, time() + (60 * 60 * 24 * 90));
+	setcookie("fondoJuego", $estilo, time() + (60 * 60 * 24 * 90));
 }
 else {
 	/** Si no se ha procesado el formulario, comprueba si existe la cookie. */
 	if (isset($_COOKIE["fondoJuego"])) {
 		/** Inicializa la variable con el color del estilo. */
-		$estilo = $_COOKIE["fondoJuego"];
+		$fondoJuego = $_COOKIE["fondoJuego"];
 	}
 }
 

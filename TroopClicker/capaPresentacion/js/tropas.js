@@ -12,6 +12,9 @@ let precioFinal;
 
 /** EVENTOS */
 
+var jsVar = "<?php print_r($_SESSION['partida']);?>";
+console.log(jsVar);
+
 /*
 ---------- Tropa ----------
 */
